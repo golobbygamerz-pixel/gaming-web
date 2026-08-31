@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="NEXORA — The future of gaming hardware.">
+  <title>NEXORA — Future Gaming</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-core"></div>
+    <span>INITIALIZING SYSTEM</span>
+  </div>
+
+  <!-- BACKGROUND EFFECTS -->
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar-wrap">
+    <nav class="navbar" id="navbar">
+
+      <a href="#home" class="brand">
+        <span class="brand-symbol">N</span>
+        <span>NEXORA</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#products">Gaming PCs</a>
+        <a href="#products">GPUs</a>
+        <a href="#setup">Accessories</a>
+        <a href="#deals">Deals</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <span>⌕</span>
+        </button>
+
+        <button class="icon-btn" aria-label="Account">
+          <span>◉</span>
+        </button>
+
+        <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">
+          <span>♡</span>
+        </button>
+
+        <button class="cart-btn" id="cartBtn">
+          <span>Cart</span>
+          <b id="cartCount">0</b>
+        </button>
+
+        <button class="mobile-toggle" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#products">Gaming PCs</a>
+      <a href="#products">GPUs</a>
+      <a href="#setup">Accessories</a>
+      <a href="#deals">Deals</a>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=2200&q=85">
+
+        <source
+          src="https://cdn.coverr.co/videos/coverr-a-man-playing-a-video-game-1579/1080p.mp4"
+          type="video/mp4">
+
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <div class="system-status reveal">
+          <span class="status-dot"></span>
+          SYSTEM ONLINE
+        </div>
+
+        <h1 class="reveal">
+          THE FUTURE OF<br>
+          <span>GAMING IS HERE.</span>
+        </h1>
+
+        <p class="hero-description reveal">
+          Engineered for players who refuse ordinary.
+          Experience next-generation hardware built without compromise.
+        </p>
+
+        <div class="hero-buttons reveal">
+          <a href="#products" class="btn btn-primary">
+            EXPLORE PRODUCTS
+            <span>↗</span>
+          </a>
+
+          <a href="#setup" class="btn btn-glass">
+            BUILD YOUR SETUP
+          </a>
+        </div>
+
+      </div>
+
+      <!-- FLOATING INFO -->
+      <div class="floating-spec spec-1">
+        <small>DISPLAY</small>
+        <strong>240Hz</strong>
+        <span>ULTRA SMOOTH</span>
+      </div>
+
+      <div class="floating-spec spec-2">
+        <small>GPU POWER</small>
+        <strong>24GB</strong>
+        <span>NEXT GEN</span>
+      </div>
+
+      <div class="floating-spec spec-3">
+        <small>LATENCY</small>
+        <strong>1ms</strong>
+        <span>INSTANT RESPONSE</span>
+      </div>
+
+      <div class="hero-scroll">
+        <span></span>
+        SCROLL TO EXPLORE
+      </div>
+
+    </section>
+
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>NEXT-GEN PERFORMANCE</span>
+        <i>✦</i>
+        <span>ULTRA LOW LATENCY</span>
+        <i>✦</i>
+        <span>ENGINEERED FOR GAMERS</span>
+        <i>✦</i>
+        <span>THE FUTURE IS NOW</span>
+        <i>✦</i>
+        <span>NEXT-GEN PERFORMANCE</span>
+        <i>✦</i>
+        <span>ULTRA LOW LATENCY</span>
+        <i>✦</i>
+      </div>
+    </div>
+
+
+    <!-- PRODUCTS -->
+    <section class="section products-section" id="products">
+
+      <div class="section-heading reveal">
+        <div>
+          <span class="eyebrow">01 / HARDWARE</span>
+          <h2>ENGINEERED<br><span>TO DOMINATE.</span></h2>
+        </div>
+
+        <p>
+          Hardware designed around one principle:
+          remove every limitation between you and the game.
+        </p>
+      </div>
+
+      <!-- SEARCH -->
+      <div class="search-panel" id="searchPanel">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search gaming hardware...">
+        <button id="closeSearch">×</button>
+      </div>
+
+      <!-- FILTER -->
+      <div class="filters reveal">
+
+        <button class="filter active" data-filter="all">ALL</button>
+        <button class="filter" data-filter="pc">PC</button>
+        <button class="filter" data-filter="laptop">LAPTOPS</button>
+        <button class="filter" data-filter="gpu">GPU</button>
+        <button class="filter" data-filter="monitor">MONITORS</button>
+        <button class="filter" data-filter="accessory">ACCESSORIES</button>
+
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+
+    </section>
+
+
+    <!-- PERFORMANCE -->
+    <section class="performance section">
+
+      <div class="performance-content">
+
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">02 / PERFORMANCE</span>
+            <h2>NUMBERS DON'T<br><span>LIE.</span></h2>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+
+          <div class="stat-card glass reveal">
+            <span>FPS</span>
+            <strong class="counter" data-target="240">0</strong>
+            <small>AVERAGE PERFORMANCE</small>
+          </div>
+
+          <div class="stat-card glass reveal">
+            <span>REFRESH RATE</span>
+            <strong class="counter" data-target="360">0</strong>
+            <small>HZ ULTRA DISPLAY</small>
+          </div>
+
+          <div class="stat-card glass reveal">
+            <span>RESPONSE</span>
+            <strong class="counter" data-target="1">0</strong>
+            <small>MS LATENCY</small>
+          </div>
+
+          <div class="stat-card glass reveal">
+            <span>GPU POWER</span>
+            <strong class="counter" data-target="24">0</strong>
+            <small>GB VRAM</small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SETUP -->
+    <section class="section setup-section" id="setup">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="eyebrow">03 / ECOSYSTEM</span>
+          <h2>BUILD YOUR<br><span>BATTLESTATION.</span></h2>
+        </div>
+
+        <p>
+          One ecosystem. Infinite possibilities.
+          Build a setup that feels as powerful as it performs.
+        </p>
+
+      </div>
+
+      <div class="setup-showcase glass reveal">
+
+        <div class="setup-image">
+          <img
+            src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=1800&q=85"
+            alt="Futuristic gaming setup">
+        </div>
+
+        <div class="setup-info">
+
+          <span class="eyebrow">NEXORA ECOSYSTEM</span>
+
+          <h3>EVERYTHING<br>IN SYNC.</h3>
+
+          <p>
+            Connect your entire gaming environment through one
+            intelligent ecosystem.
+          </p>
+
+          <div class="setup-items">
+
+            <div>
+              <span>01</span>
+              <strong>NEO DESKTOP</strong>
+              <small>₹1,49,999</small>
+            </div>
+
+            <div>
+              <span>02</span>
+              <strong>VISION 360</strong>
+              <small>₹49,999</small>
+            </div>
+
+            <div>
+              <span>03</span>
+              <strong>CORE KEYBOARD</strong>
+              <small>₹12,999</small>
+            </div>
+
+            <div>
+              <span>04</span>
+              <strong>PHANTOM MOUSE</strong>
+              <small>₹7,999</small>
+            </div>
+
+          </div>
+
+          <button class="btn btn-primary" id="setupCart">
+            ADD SETUP TO CART
+            <span>+</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TECHNOLOGY -->
+    <section class="section technology">
+
+      <div class="section-heading reveal">
+        <div>
+          <span class="eyebrow">04 / TECHNOLOGY</span>
+          <h2>BUILT<br><span>DIFFERENT.</span></h2>
+        </div>
+      </div>
+
+      <div class="technology-grid">
+
+        <div class="tech-card glass reveal">
+          <div class="tech-number">01</div>
+          <div class="tech-icon">◈</div>
+          <h3>NEXT-GEN<br>PERFORMANCE</h3>
+          <p>Raw power engineered for extreme gaming workloads.</p>
+          <span class="tech-line"></span>
+        </div>
+
+        <div class="tech-card glass reveal">
+          <div class="tech-number">02</div>
+          <div class="tech-icon">⌁</div>
+          <h3>ULTRA-LOW<br>LATENCY</h3>
+          <p>Every millisecond matters. Every response is instant.</p>
+          <span class="tech-line"></span>
+        </div>
+
+        <div class="tech-card glass reveal">
+          <div class="tech-number">03</div>
+          <div class="tech-icon">◎</div>
+          <h3>AI-POWERED<br>OPTIMIZATION</h3>
+          <p>Intelligent systems continuously optimize your experience.</p>
+          <span class="tech-line"></span>
+        </div>
+
+        <div class="tech-card glass reveal">
+          <div class="tech-number">04</div>
+          <div class="tech-icon">◇</div>
+          <h3>THERMAL<br>ENGINEERING</h3>
+          <p>Advanced cooling keeps performance stable under pressure.</p>
+          <span class="tech-line"></span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- DEALS -->
+    <section class="section deals-section" id="deals">
+
+      <div class="deal-header reveal">
+
+        <div>
+          <span class="eyebrow">05 / LIMITED DROP</span>
+          <h2>UPGRADE<br><span>WITHOUT LIMITS.</span></h2>
+        </div>
+
+        <div class="countdown">
+
+          <div>
+            <strong id="days">00</strong>
+            <small>DAYS</small>
+          </div>
+
+          <span>:</span>
+
+          <div>
+            <strong id="hours">00</strong>
+            <small>HRS</small>
+          </div>
+
+          <span>:</span>
+
+          <div>
+            <strong id="minutes">00</strong>
+            <small>MIN</small>
+          </div>
+
+          <span>:</span>
+
+          <div>
+            <strong id="seconds">00</strong>
+            <small>SEC</small>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="deal-card glass reveal">
+
+        <div class="deal-image">
+          <img
+            src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=85"
+            alt="Gaming PC">
+        </div>
+
+        <div class="deal-content">
+
+          <span class="deal-badge">-20% LIMITED</span>
+
+          <span class="eyebrow">NEXORA / N-01</span>
+
+          <h3>NEO TITAN<br>ULTIMATE</h3>
+
+          <p>
+            RTX-powered gaming system with next-generation architecture,
+            liquid cooling and intelligent performance control.
+          </p>
+
+          <div class="price">
+            <del>₹1,99,999</del>
+            <strong>₹1,59,999</strong>
+          </div>
+
+          <button class="btn btn-primary" id="dealCart">
+            ADD TO CART
+            <span>+</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- REVIEWS -->
+    <section class="section reviews-section">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="eyebrow">06 / COMMUNITY</span>
+          <h2>PLAYERS<br><span>APPROVE.</span></h2>
+        </div>
+
+      </div>
+
+      <div class="reviews-grid">
+
+        <article class="review glass reveal">
+          <div class="stars">★★★★★</div>
+          <p>
+            “The build quality is insane. It genuinely feels like
+            hardware from another generation.”
+          </p>
+          <div class="review-user">
+            <div class="avatar">AR</div>
+            <div>
+              <strong>Arjun R.</strong>
+              <small>NEXORA N-01 OWNER</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="review glass reveal">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Everything about the ecosystem feels premium.
+            The performance is exactly what I wanted.”
+          </p>
+          <div class="review-user">
+            <div class="avatar">MK</div>
+            <div>
+              <strong>Max K.</strong>
+              <small>PRO GAMER</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="review glass reveal">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Finally a gaming brand that doesn't look like
+            every other RGB setup on the internet.”
+          </p>
+          <div class="review-user">
+            <div class="avatar">ZS</div>
+            <div>
+              <strong>Zayn S.</strong>
+              <small>CONTENT CREATOR</small>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter section">
+
+      <div class="newsletter-card glass reveal">
+
+        <div>
+          <span class="eyebrow">07 / ACCESS</span>
+          <h2>ENTER THE<br><span>NEXT LEVEL.</span></h2>
+          <p>
+            Get early access to new hardware, exclusive drops
+            and gaming technology.
+          </p>
+        </div>
+
+        <form id="newsletterForm">
+
+          <input
+            type="email"
+            placeholder="ENTER YOUR EMAIL"
+            required>
+
+          <button type="submit">
+            JOIN
+            <span>→</span>
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+
+        <a href="#home" class="brand">
+          <span class="brand-symbol">N</span>
+          <span>NEXORA</span>
+        </a>
+
+        <p>
+          Engineering the future of gaming hardware.
+        </p>
+
+        <span class="system-text">
+          ● ALL SYSTEMS OPERATIONAL
+        </span>
+
+      </div>
+
+      <div class="footer-column">
+        <h4>SHOP</h4>
+        <a href="#products">Gaming PCs</a>
+        <a href="#products">Laptops</a>
+        <a href="#products">GPUs</a>
+        <a href="#products">Accessories</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>SUPPORT</h4>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">Warranty</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>CONNECT</h4>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Discord</a>
+        <a href="#">X / Twitter</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 NEXORA. ALL SYSTEMS OPERATIONAL.</span>
+      <span>DESIGNED FOR THE NEXT GENERATION.</span>
+    </div>
+
+  </footer>
+
+
+  <!-- CART DRAWER -->
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+      <div>
+        <span class="eyebrow">YOUR SYSTEM</span>
+        <h3>SHOPPING CART</h3>
+      </div>
+
+      <button id="closeCart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <div class="empty-cart">
+        <span>◌</span>
+        <p>Your cart is empty.</p>
+        <small>Start building your system.</small>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+        <span>SUBTOTAL</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+
+      <button class="checkout-btn" id="checkoutBtn">
+        PROCEED TO CHECKOUT
+        <span>→</span>
+      </button>
+
+    </div>
+
+  </aside>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal" id="quickModal">
+
+    <div class="modal-box glass">
+
+      <button class="modal-close" id="modalClose">×</button>
+
+      <div class="modal-image">
+        <img id="modalImage" src="" alt="">
+      </div>
+
+      <div class="modal-info">
+
+        <span class="eyebrow" id="modalCategory">HARDWARE</span>
+
+        <h2 id="modalName">Product</h2>
+
+        <p id="modalDescription"></p>
+
+        <div class="modal-specs">
+          <span>⚡ HIGH PERFORMANCE</span>
+          <span>◈ NEXT GEN</span>
+          <span>◉ 1 YEAR WARRANTY</span>
+        </div>
+
+        <div class="modal-price" id="modalPrice"></div>
+
+        <button class="btn btn-primary" id="modalAdd">
+          ADD TO CART
+          <span>+</span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <span>✓</span>
+    <div>
+      <strong>ADDED TO SYSTEM</strong>
+      <small id="toastText">Product added to cart.</small>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
